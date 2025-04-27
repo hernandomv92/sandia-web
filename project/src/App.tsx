@@ -2,7 +2,6 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ReadyPackages from './components/ReadyPackages';
-import CustomBuilder from './components/CustomBuilder';
 import InteractiveBuilder from './components/InteractiveBuilder';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
@@ -17,11 +16,8 @@ function App() {
         <Hero />
 
         <div className="relative">
-          {/* Ahora montamos todas las secciones directamente */}
           <ReadyPackages />
-          <CustomBuilder />
-          <InteractiveBuilder />
-
+          <InteractiveBuilder /> {/* 👈 solo este builder */}
           <Cart />
         </div>
 

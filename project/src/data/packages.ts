@@ -3,90 +3,93 @@ import { products } from './products';
 
 export const packages: Package[] = [
   {
-    id: 'pkg-energetico',
-    name: 'Paquete Energético',
-    description: 'Perfecto para reuniones matutinas y sesiones de brainstorming',
-    price: 85,
-    image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg',
-    products: [
-      products.find(p => p.id === 'snack-2')!,
-      products.find(p => p.id === 'fruit-4')!,
-      products.find(p => p.id === 'drink-2')!,
-      products.find(p => p.id === 'snack-6')!
-    ],
-    tags: ['energetico', 'vitaminas'],
-    featured: true
-  },
-  {
-    id: 'pkg-vegano',
-    name: 'Paquete Vegano',
-    description: 'Opciones 100% vegetales, deliciosas y nutritivas',
-    price: 95,
-    image: 'https://images.pexels.com/photos/7194915/pexels-photo-7194915.jpeg',
-    products: [
-      products.find(p => p.id === 'snack-3')!,
-      products.find(p => p.id === 'snack-5')!,
-      products.find(p => p.id === 'fruit-1')!,
-      products.find(p => p.id === 'drink-1')!
-    ],
-    tags: ['vegano', 'sin-gluten'],
-    featured: true
-  },
-  {
-    id: 'pkg-premium',
-    name: 'Paquete Premium',
-    description: 'Nuestra mejor selección para impresionar a clientes y colaboradores',
+    id: 'pkg-snack-party',
+    name: 'Fiesta de Snacks',
+    description: 'Perfecto para reuniones informales con una gran variedad de snacks.',
     price: 120,
-    image: 'https://images.pexels.com/photos/6783153/pexels-photo-6783153.jpeg',
+    image: 'https://images.unsplash.com/photo-1600891964599-f61ba0e24092', // Imagen bonita de snacks
     products: [
-      products.find(p => p.id === 'snack-1')!,
-      products.find(p => p.id === 'fruit-2')!,
-      products.find(p => p.id === 'drink-4')!,
-      products.find(p => p.id === 'snack-4')!
+      products.find(p => p.name === 'Doritos')!,
+      products.find(p => p.name === 'Galletas Oreo')!,
+      products.find(p => p.name === 'Chocorramo')!,
+      products.find(p => p.name === 'Pringles')!,
     ],
-    tags: ['premium', 'variado'],
-    featured: true
+    tags: ['snacks', 'fiesta'],
+    featured: true,
   },
   {
-    id: 'pkg-clasico',
-    name: 'Paquete Clásico',
-    description: 'Refrigerios tradicionales que nunca fallan',
-    price: 75,
-    image: 'https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg',
+    id: 'pkg-gourmet-deluxe',
+    name: 'Gourmet Deluxe',
+    description: 'Una experiencia de sabor con platos elaborados de alta calidad.',
+    price: 180,
+    image: 'https://images.unsplash.com/photo-1601050690590-0ec77c6f40c3', // Imagen de pasta/lasaña
     products: [
-      products.find(p => p.id === 'fruit-3')!,
-      products.find(p => p.id === 'drink-3')!,
-      products.find(p => p.id === 'snack-6')!,
-      products.find(p => p.id === 'protein-1')!
+      products.find(p => p.name === 'Pasta')!,
+      products.find(p => p.name === 'Lasaña')!,
+      products.find(p => p.name === 'Arroz Chino')!,
+      products.find(p => p.name === 'Arroz Paisa')!,
     ],
-    tags: ['clasico', 'economico']
+    tags: ['gourmet', 'exclusivo'],
+    featured: true,
   },
   {
-    id: 'pkg-proteico',
-    name: 'Paquete Proteico',
-    description: 'Alto contenido de proteínas para mantener la energía',
-    price: 105,
-    image: 'https://images.pexels.com/photos/1927314/pexels-photo-1927314.jpeg',
+    id: 'pkg-sano',
+    name: 'Sanísimo',
+    description: 'Opciones saludables para una alimentación consciente y nutritiva.',
+    price: 100,
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994', // Imagen de ensaladas/frutas
     products: [
-      products.find(p => p.id === 'protein-1')!,
-      products.find(p => p.id === 'protein-2')!,
-      products.find(p => p.id === 'snack-4')!,
-      products.find(p => p.id === 'drink-3')!
+      products.find(p => p.name === 'Ensalada de Verduras de Atún')!,
+      products.find(p => p.name === 'Ensalada de Verduras de Jamón')!,
+      products.find(p => p.name === 'Granola')!,
+      products.find(p => p.name === 'Frutas')!,
     ],
-    tags: ['proteina', 'saciante']
+    tags: ['saludable', 'sanisimo'],
+    featured: false,
   },
   {
-    id: 'pkg-detox',
-    name: 'Paquete Detox',
-    description: 'Limpia y revitaliza con alimentos depurativos',
-    price: 110,
-    image: 'https://images.pexels.com/photos/3645282/pexels-photo-3645282.jpeg',
+    id: 'pkg-valluno',
+    name: 'Típicos Vallunos',
+    description: 'Sabores tradicionales del Valle del Cauca para deleitarte.',
+    price: 95,
+    image: 'https://images.unsplash.com/photo-1606788075766-9a2e3b6be2fc', // Imagen tipo empanadas o comidas típicas
     products: [
-      products.find(p => p.id === 'drink-2')!,
-      products.find(p => p.id === 'fruit-1')!,
-      products.find(p => p.id === 'snack-3')!,
-      products.find(p => p.id === 'drink-1')!
+      products.find(p => p.name === 'Empanadas')!,
+      products.find(p => p.name === 'Marranitas')!,
+      products.find(p => p.name === 'Papa Rellena')!,
+      products.find(p => p.name === 'Lulada')!,
     ],
-    tags: ['detox', 'saludable']
+    tags: ['tipico', 'valluno'],
+    featured: false,
+  },
+  {
+    id: 'pkg-dulce-final',
+    name: 'Dulce Final',
+    description: 'Los mejores postres para darle un cierre perfecto a tu comida.',
+    price: 85,
+    image: 'https://images.unsplash.com/photo-1599785209707-7b3b5c5e8327', // Imagen postres/frutas
+    products: [
+      products.find(p => p.name === 'Ensalada de Frutas')!,
+      products.find(p => p.name === 'Fresas con Crema')!,
+      products.find(p => p.name === 'Helados')!,
+      products.find(p => p.name === 'Tortas')!,
+    ],
+    tags: ['postres', 'dulce'],
+    featured: true,
+  },
+  {
+    id: 'pkg-bebidas-refrescantes',
+    name: 'Bebidas Refrescantes',
+    description: 'Una variedad de bebidas para todo tipo de gustos.',
+    price: 70,
+    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90', // Imagen jugos/gaseosas
+    products: [
+      products.find(p => p.name === 'Jugo 100% Natural')!,
+      products.find(p => p.name === 'Jugo en Caja')!,
+      products.find(p => p.name === 'Gaseosas')!,
+      products.find(p => p.name === 'Bebidas Veganas')!,
+    ],
+    tags: ['bebidas', 'refrescante'],
+    featured: false,
   }
 ];

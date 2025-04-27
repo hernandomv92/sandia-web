@@ -4,7 +4,14 @@ export interface Product {
   description: string;
   price: number;
   image: string;
-  category: 'snack' | 'fruit' | 'drink' | 'protein';
+  category: 
+    | 'snacks'
+    | 'gourmet'
+    | 'sanisimo'
+    | 'tipicos-vallunos'
+    | 'postres'
+    | 'bebidas'
+    | 'vegetariano';
   tags: string[];
 }
 
@@ -21,7 +28,7 @@ export interface Package {
 
 export interface CartItem {
   id: string;
-  type: 'package' | 'product' | 'custom';
+  type: 'package' | 'product'; // <<< ESTA línea es la clave que no estaba antes
   name: string;
   price: number;
   quantity: number;
